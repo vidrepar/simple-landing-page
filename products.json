@@ -1,0 +1,95 @@
+{
+	"products": {
+		"1":{
+			"productName":"Awesome product 1",
+			"price":450,
+			"imageUrl":"assets/images/image-1.jpg"
+		},
+		"2":{
+			"productName":"Awesome product 2",
+			"price":40,
+			"imageUrl":"assets/images/image-2.jpg"
+		},
+		"3":{
+			"productName":"Awesome product 3",
+			"price":450,
+			"imageUrl":"assets/images/image-3.jpg"
+		},
+		"4":{
+			"productName":"Awesome product 4",
+			"price":40,
+			"imageUrl":"assets/images/image-4.jpg"
+		},
+		"5":{
+			"productName":"Awesome product 5",
+			"price":12,
+			"imageUrl":"assets/images/image-5.jpg"
+		},
+		"6":{
+			"productName":"Awesome product 6",
+			"price":180,
+			"imageUrl":"assets/images/image-6.jpg"
+		},
+		"7":{
+			"productName":"Awesome product 7",
+			"price":2500,
+			"imageUrl":"assets/images/image-7.jpg"
+		},
+		"8":{
+			"productName":"Awesome product 8",
+			"price":300,
+			"imageUrl":"assets/images/image-8.jpg"
+		},
+		"9":{
+			"productName":"Awesome product 9",
+			"price":700,
+			"imageUrl":"assets/images/image-9.jpg"
+		},
+		"10":{
+			"productName":"Awesome product 10",
+			"price":1200,
+			"imageUrl":"assets/images/image-10.jpg"
+		},
+		"11":{
+			"productName":"Awesome product 11",
+			"price":450,
+			"imageUrl":"assets/images/image-11.jpg"
+		},
+		"12":{
+			"productName":"Awesome product 12",
+			"price":40,
+			"imageUrl":"assets/images/image-12.jpg"
+		},
+		"13":{
+			"productName":"Awesome product 13",
+			"price":12,
+			"imageUrl":"assets/images/image-13.jpg"
+		},
+		"14":{
+			"productName":"Awesome product 14",
+			"price":180,
+			"imageUrl":"assets/images/image-14.jpg"
+		},
+		"15":{
+			"productName":"Awesome product 15",
+			"price":2500,
+			"imageUrl":"assets/images/image-15.jpg"
+		},
+		"16":{
+			"productName":"Awesome product 16",
+			"price":300,
+			"imageUrl":"assets/images/image-16.jpg"
+		},
+		"17":{
+			"productName":"Awesome product 17",
+			"price":700,
+			"imageUrl":"assets/images/image-17.jpg"
+		},
+		"18":{
+			"productName":"Awesome product 18",
+			"price":1200,
+			"imageUrl":"assets/images/image-18.jpg"
+		}
+
+	}
+}

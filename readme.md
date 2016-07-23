@@ -1,14 +1,4 @@
-#1. Get the template
-
-```
-git init
-```
-
-```
-git pull https://github.com/vidrepar/creative-coding-template.git
-```
-
-#2. Get the dependencies
+#1. Get the dependencies
 
 ```
 npm i
@@ -18,13 +8,13 @@ npm i
 bower i
 ```
 
-#3. Serve
+#2. Serve
 
 ```
 gulp serve
 ```
 
-#4. Build
+#3. Build
 
 ```
 gulp build

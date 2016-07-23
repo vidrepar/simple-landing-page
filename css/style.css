@@ -1,3 +1,68 @@
-div{
-    color: red;
+#element1 {
+	height: 300px;
+	width: 300px;
+	background-color: aqua;
+}
+
+#element2 {
+	height: 200px;
+	width: 200px;
+	background-color: rebeccapurple;
+}
+
+#element3 {
+	height: 100px;
+	width: 100px;
+	background-color: lightgrey;
+}
+
+.browser-info {
+	color: lightgray;
+	font-size: 16px;
+}
+
+header {
+	width: 100%;
+	height: 70px;
+	background-color: #00cc99;
+}
+
+.logo{
+	cursor: pointer;
+	display: inline-block;
+	line-height: 70px;
+	padding-right: 10px;
+	font-size: 20px;
+	font-weight: 900;
+	color: #00F6BB;
+}
+
+.nav {
+	display: inline-block;
+	position: relative;
+	top: -2px;
+}
+
+.nav ul {
+	margin: 0;
+}
+
+.nav ul li{
+	cursor: pointer;
+	display: inline-block;
+	line-height: 70px;
+	padding: 0 30px;
+	border-left: 1px solid #00F6BB;
+	border-top: none;
+	border-bottom: none;
+}
+
+.nav ul li:last-child{
+	border-left: 1px solid #00F6BB;
+	border-right: 1px solid #00F6BB;
+}
+
+.nav ul li a{
+	text-decoration: none;
+	color: #fff;
 }
