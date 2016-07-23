@@ -54,6 +54,7 @@ var app = {
 
 		var browserName;
 		var browserVersion;
+		var browserInfoIE;
 		var platformName;
 
 		navigator.browserInfo = (function () {
@@ -74,20 +75,31 @@ var app = {
 
 		browserName = navigator.browserInfo.browser;
 		browserVersion = navigator.browserInfo.version;
+		browserInfoIE = navigator.browserInfo;
 		platformName = navigator.platform;
 
-		if(browserName === 'IE' && browserVersion === 7){
-			(function () {
-				alert("Hello World");
-			})();
-		} else {
-			alert("No Hello World");
-		}
+		console.log(navigator);
 
-		$('body').prepend($('<div>', {
-			class: 'browser-info',
-			text:'You are using ' + browserName + ' ' + browserVersion + ' on ' + platformName
-		}));
+		if(browserName === undefined || browserVersion === undefined){
+			$('body').prepend($('<div>', {
+				class: 'browser-info',
+				text:'You are using ' + browserInfoIE + ' on ' + platformName
+			}));
+
+			if(browserInfoIE === 'IE 7'){
+				(function () {
+					alert("Hello World");
+				})();
+			} else {
+				alert("No Hello World");
+			}
+
+		} else {
+			$('body').prepend($('<div>', {
+				class: 'browser-info',
+				text:'You are using ' + browserName + ' ' + browserVersion + ' on ' + platformName
+			}));
+		}
 
 
     },
