@@ -4,10 +4,10 @@ var app = {
 
         console.log('App initialized');
 
-        app.firstTask();
-        app.secondTask();
-        app.thirdTask();
-        app.fourthTask();
+        //app.firstTask();
+        //app.secondTask();
+        //app.thirdTask();
+        //app.fourthTask();
         app.fifthTask();
         app.sixthTask();
 
@@ -141,6 +141,52 @@ var app = {
 
     },
     sixthTask: function () {
+
+		// Megamenu
+		var $headerHeight = $('header').height();
+		var $megaMenuToggleBtn = $('.megamenu');
+		var template = $('#mega-menu-template').html();
+		var $megaMenuContent = $('<div>', { class:'mega-menu-content' });
+
+
+		$megaMenuToggleBtn.on('click', function () {
+
+			$megaMenuContent.css({ 'width':$(window).width()+15 });
+
+			$(this).toggleClass('is-mega-menu');
+			$(this).append($megaMenuContent);
+
+			if($(this).hasClass('is-mega-menu')){
+
+				$megaMenuContent.show();
+				$('body').css('overflow', 'hidden');
+
+			} else{
+
+				$megaMenuContent.hide();
+				$('body').css('overflow', 'auto');
+
+			}
+
+
+		});
+
+		$(window).on('resize', function () {
+
+			$megaMenuContent.css({
+				'background-color':'#00F6BB',
+				'position':'fixed',
+				'height':$(window).height() - $headerHeight,
+				'width':$(window).width(),
+				'top':$headerHeight,
+				'left':0,
+				'overflow':'auto'
+			});
+
+		}).resize();
+
+		$megaMenuContent.append(template);
+
 
 		// Products AJAX call
 		$.get('../products.json', function (data, status) {
