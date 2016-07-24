@@ -4,10 +4,10 @@ var app = {
 
         console.log('App initialized');
 
-        //app.firstTask();
-        //app.secondTask();
-        //app.thirdTask();
-        //app.fourthTask();
+        app.firstTask();
+        app.secondTask();
+        app.thirdTask();
+        app.fourthTask();
         app.fifthTask();
         app.sixthTask();
 
@@ -81,7 +81,7 @@ var app = {
 		console.log(navigator);
 
 		if(browserName === undefined || browserVersion === undefined){
-			$('body').prepend($('<div>', {
+			$('body').append($('<div>', {
 				class: 'browser-info',
 				text:'You are using ' + browserInfoIE + ' on ' + platformName
 			}));
@@ -95,7 +95,7 @@ var app = {
 			}
 
 		} else {
-			$('body').prepend($('<div>', {
+			$('body').append($('<div>', {
 				class: 'browser-info',
 				text:'You are using ' + browserName + ' ' + browserVersion + ' on ' + platformName
 			}));

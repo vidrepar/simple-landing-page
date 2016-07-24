@@ -21,13 +21,6 @@ body{
 	max-height: 400px !important;
 }
 
-.product{
-	width: 100%;
-	height: 250px;
-	background-color: #000;
-	margin-bottom: 30px;
-}
-
 #element1 {
 	height: 300px;
 	width: 300px;
