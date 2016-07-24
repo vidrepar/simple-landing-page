@@ -143,7 +143,7 @@ var app = {
     sixthTask: function () {
 
 		// Megamenu
-		var $headerHeight = $('header').height();
+		var $headerHeight;
 		var $megaMenuToggleBtn = $('.megamenu');
 		var template = $('#mega-menu-template').html();
 		var $megaMenuContent = $('<div>', { class:'mega-menu-content' });
@@ -173,6 +173,8 @@ var app = {
 
 		$(window).on('resize', function () {
 
+			$headerHeight = $('.logo').height();
+
 			$megaMenuContent.css({
 				'background-color':'#00F6BB',
 				'position':'fixed',
@@ -182,6 +184,9 @@ var app = {
 				'left':0,
 				'overflow':'auto'
 			});
+
+			$('.owl-carousel').css({ 'top':$('header').height()+15 });
+			$('.products').css({ 'top':$('header').height()+15 });
 
 		}).resize();
 
@@ -202,7 +207,18 @@ var app = {
 		});
 
 		// Owl Carousel init
-		$(".owl-carousel").owlCarousel();
+		$("#owl-demo").owlCarousel({
+
+			autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+			items : 4,
+			itemsDesktop : [1199,3],
+			itemsDesktopSmall : [979,3],
+			singleItem:true
+
+		});
+
+		$('.owl-carousel').css({ 'top':$('header').height()+15 });
 
     }
 

@@ -1,7 +1,31 @@
+
 body{
 
+	margin: 0 !important;
+	padding: 0 !important;
 	height: 2000px;
 
+}
+
+#owl-demo .item{
+	margin: 3px;
+}
+#owl-demo .item img{
+	display: block;
+	width: 100%;
+	height: auto;
+
+}
+
+#owl-demo .item{
+	max-height: 400px !important;
+}
+
+.product{
+	width: 100%;
+	height: 250px;
+	background-color: #000;
+	margin-bottom: 30px;
 }
 
 #element1 {
@@ -32,6 +56,7 @@ header {
 	height: 70px;
 	background-color: #00cc99;
 	position: fixed;
+	z-index: 9999;
 }
 
 .logo{
@@ -44,18 +69,18 @@ header {
 	color: #00F6BB;
 }
 
-.nav {
-	display: inline-block;
-	position: relative;
+.navigation {
+	display: inline-block !important;
+	position: relative !important;
 	top: -2px;
 }
 
-.nav ul {
+.navigation ul {
 	margin: 0;
 	list-style-type: none;
 }
 
-.nav ul li{
+.navigation ul li{
 	cursor: pointer;
 	display: inline-block;
 	line-height: 70px;
@@ -63,20 +88,18 @@ header {
 	border-left: 1px solid #00F6BB;
 	border-top: none;
 	border-bottom: none;
-
-
 }
 
-.nav ul li:hover{
+.navigation ul li:hover{
 	background-color: #00F6BB;
 }
 
-.nav ul li:last-child{
+.navigation ul li:last-child{
 	border-left: 1px solid #00F6BB;
 	border-right: 1px solid #00F6BB;
 }
 
-.nav ul li a{
+.navigation ul li a{
 	text-decoration: none;
 	color: #fff;
 }
@@ -99,4 +122,53 @@ header {
 	position:fixed;
 	overflow-y:scroll;
 	overflow-x:hidden;
+}
+
+.owl-carousel{
+	position: relative !important;
+}
+
+@media only screen
+and (max-width : 667px) {
+
+	.container{
+		padding: 0 !important;
+	}
+
+	header {
+		min-height: 70px;
+		background-color: rebeccapurple;
+		height: auto;
+		padding-bottom: 15px;
+	}
+
+	.logo{
+		padding-left: 17px;
+	}
+
+	.logo, .navigation{
+		display: block;
+	}
+
+	.navigation{
+		width: 100% !important;
+		position: relative;
+	}
+
+	.navigation ul{
+		width: 100% !important;
+		padding: 0;
+	}
+
+	.navigation ul li {
+		display: block;
+		line-height: normal;
+		border: none;
+		padding: 20px;
+	}
+
+	.navigation ul li:last-child{
+		border: none;
+	}
+
 }
